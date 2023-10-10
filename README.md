@@ -2,6 +2,10 @@
 
 ArxivFormula is the first dataset framing mathematical formula detection as a joint task of formula entity detection and formula relation extraction, rather than a simple task of object detection or instance segmentation. It's constructed using a weak supervision approach and comprises 500K document images for training, 50K for validation and 50K for testing.
 
+## News
+- **We released annotations and origin document images of the ArxivFormula datasets ([OneDrive](https://1drv.ms/f/s!AvjKgA816xGJpEC_t684KIkfDMfm?e=6d9PjF)), please refer to `Get Data` section.**
+- **We released some examples of the ArxivFormula datasets, please refer to `ArxivFormula_examples.zip`.**
+
 ## Introduction 
 Most of existing mathematical formula detectors focus on detecting formula entities through object detection or instance segmentation techniques. However, these methods often fail to convey complete messages due to the absence of the contextual and layout information of mathematical formulas. For a more comprehensive understanding of mathematical formulas in document images, it is preferable to detect logical formula blocks that include one or multiple formula entities arranged in their natural reading order. These logical formula blocks enable the transmission of complete contextual messages of mathematical formulas and aid in the reconstruction of layout information of the document images, resulting in a more accurate mathematical formula detection. To this end, ArxivFormula first presents a novel perspective on the problem of mathematical formula detection by framing it as a joint task of formula entity detection and formula relation extraction, rather than a simple task of object detection or instance segmentation. This new perspective enables us to detect logical formula blocks that convey complete contextual and layout information of mathematical formulas, while also eliminating labeling issues in existing benchmark datasets.
 
@@ -95,6 +99,22 @@ Most of existing mathematical formula detectors focus on detecting formula entit
 </table>
 
 Note: (IF: Inline Formula, DFL: Displayed Formula Line, DFB: Displayed Formula Block, FN: Formula Number, NFL: Next Formula Line, FRN: Formula Reference Number.)
+
+
+### **Get Data**
+**\*\*Please DO NOT re-distribute the dataset.\*\***
+
+The annotations and original document images of the ArxivFormula dataset can be download from the [OneDrive](https://1drv.ms/f/s!AvjKgA816xGJpEC_t684KIkfDMfm?e=6d9PjF). In order to reduce the loss caused by download interruption, we divided "ArxivFormula_Training_set_images.zip" into 10 parts, and after downloading all of them, use the decompression software to decompress them together. Additionally, we would like to note that we have only released the document images and annotations of arXiv papers that comply with the [arXiv.org perpetual, non-exclusive license](https://arxiv.org/licenses/nonexclusive-distrib/1.0/license.html). This constitutes approximately 93% of the entire dataset.
+
+| File | Size | md5sum |
+| :-: | :-: | :-: |
+| ArxivFormula_Training_set_images.zip <br> [[1], [2], [3], [4], [5], [6], [7], [8], [9], [10]] | 5.9 GB <br> /each part | - |
+| ArxivFormula_Validation_set_images.zip | 5.9 GB | a0f944b4150940c1d3cf060ff4307d7f |
+| ArxivFormula_Testing_set_images.zip |5.9 GB | fc3b956bbbe5a20ae82e74b4a182951e |
+| ArxivFormula_Annotations.zip | 1.1 GB | a5735ae789850a854b0326079e3c925f  |
+
+ The annotation format used is the standard COCO-style annotation format. More details about the dataset please refer to [ArxivFormula_Details](./ArxivFormula_Details.md).
+
 
 ### FormulaDet
 We propose a new approach, called FormulaDet, to address these two sub-tasks simultaneously. FormulaDet first employs a dynamic convolution-based formula entity detector, named DynFormula, to detect formula entities. It then uses a multi-modal transformer-based relation extraction method, named RelFormer, to group these detected formula entities into logical formula blocks.
