@@ -235,6 +235,6 @@ def create_augmented_dataset(mode, image_root, output_image_root):
 
 
 if __name__ == "__main__":
-    # create_augmented_dataset("val", "JPEGImages/val", "JPEGImages/val_aug")
-    # create_augmented_dataset("test", "JPEGImages/test", "JPEGImages/test_aug")
-    create_augmented_dataset("examples", "JPEGImages/examples", "JPEGImages/examples_aug")
+    # create_augmented_dataset("val", "val", "val_aug")
+    # create_augmented_dataset("test", "test", "test_aug")
+    create_augmented_dataset("examples", "examples", "examples_aug")

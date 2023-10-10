@@ -5,7 +5,7 @@ from pycocotools.coco import COCO
 import numpy as np
 
 mode = "examples"
-image_root = f"JPEGImages/{mode}"
+image_root = f"{mode}"
 json_path = f"{mode}.json"
 vis_root = f"VIS_GT/{mode}"
 os.makedirs(vis_root, exist_ok=True)
