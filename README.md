@@ -3,7 +3,7 @@
 ArxivFormula is the first dataset framing mathematical formula detection as a joint task of formula entity detection and formula relation extraction, rather than a simple task of object detection or instance segmentation. It's constructed using a weak supervision approach and comprises 500K document images for training, 50K for validation and 50K for testing.
 
 ## News
-- **We released annotations and origin document images of the ArxivFormula datasets ([OneDrive](https://1drv.ms/f/s!AvjKgA816xGJpEA05S8VVZebJGBh?e=e17fJh)), please refer to `Get Data` section.**
+- **We released annotations and origin document images of the ArxivFormula datasets ([OneDrive](https://1drv.ms/f/s!AvjKgA816xGJpEAPprIIzo4iyXcZ?e=7hC0ri)), please refer to `Get Data` section.**
 - **We released some examples of the ArxivFormula datasets, please refer to `ArxivFormula_examples.zip`.**
 
 ## Introduction 
@@ -104,7 +104,7 @@ Note: (IF: Inline Formula, DFL: Displayed Formula Line, DFB: Displayed Formula B
 ### **Get Data**
 **\*\*Please DO NOT re-distribute the dataset.\*\***
 
-The annotations and original document images of the ArxivFormula dataset can be download from the [OneDrive](https://1drv.ms/f/s!AvjKgA816xGJpEA05S8VVZebJGBh?e=e17fJh). In order to reduce the loss caused by download interruption, we divided "ArxivFormula_Training_set_images.zip" into 10 parts, and after downloading all of them, use the decompression software to decompress them together. Additionally, we would like to note that we have only released the document images and annotations of arXiv papers that comply with the [arXiv.org perpetual, non-exclusive license](https://arxiv.org/licenses/nonexclusive-distrib/1.0/license.html). This constitutes approximately 93% of the entire dataset.
+The annotations and original document images of the ArxivFormula dataset can be download from the [OneDrive](https://1drv.ms/f/s!AvjKgA816xGJpEAPprIIzo4iyXcZ?e=7hC0ri). In order to reduce the loss caused by download interruption, we divided "ArxivFormula_Training_set_images.zip" into 10 parts, and after downloading all of them, use the decompression software to decompress them together. Additionally, we would like to note that we have only released the document images and annotations of arXiv papers that comply with the [arXiv.org perpetual, non-exclusive license](https://arxiv.org/licenses/nonexclusive-distrib/1.0/license.html). This constitutes approximately 93% of the entire dataset.
 
 | File | Size | md5sum |
 | :-: | :-: | :-: |
